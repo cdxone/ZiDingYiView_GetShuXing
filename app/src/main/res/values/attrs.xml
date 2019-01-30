@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        1、其中name属性可以是任何值，不一定和控件的名字保持一致
+        2、最好是和控件的名字保持一致。
+    -->
+    <declare-styleable name="MyViewTest">
+        <!--
+            1、定义枚举类型
+            2、如果不定义format，默认是integer类型的。
+        -->
+        <attr name="param1" format="integer">
+            <enum name="param1_test0" value="0" />
+            <enum name="param1_test1" value="1" />
+        </attr>
+
+        <!--
+            1、定义字符串类型
+            2、调用方式 android:param2 ="0jOkQ80oD1JL9C6HAja99uGXCRiS2CGjKO_bc_g"
+        -->
+        <attr name="param2" format="string" />
+
+        <!--
+            1、定义boolean类型
+            2、调用方式 android:param3 = "true"
+        -->
+        <attr name="param3" format="boolean"/>
+
+        <!--
+            reference：引用某一资源ID。引用的方式为：android:param4 = "@drawable/图片ID"。
+            color:颜色值。引用的方式为：android:param4 = "#00FF00"。
+            | : 表示或
+        -->
+        <attr name="param4" format="reference|color"/>
+
+        <!--
+            1、定义尺寸类型
+            2、调用方式  android:param5 = "42dip"
+        -->
+        <attr name = "param5" format = "dimension" />
+
+        <!--
+            1、定义浮点类型
+            2、调用方式 android:param6 = "1.0"
+        -->
+        <attr name = "param6" format = "float" />
+
+        <!--
+            1、定义整型
+            2、调用方式 android:param7="12"
+            3、如果没有写format类型，默认是integer类型
+        -->
+        <attr name = "param7" format = "integer" />
+
+        <!--
+           1、定义百分数
+           2、调用方式 android:param8="200%"
+       -->
+        <attr name = "param8" format = "fraction" />
+
+        <!--
+            1、flag：位或运算。
+            2、调用方式：android:param9 = "param9_test0 | param9_test1　|　param9_test2"
+            3、软件盘的设置方式就是采用这样方式：android:windowSoftInputMode = "stateUnspecified | stateUnchanged　|　stateHidden"
+            4、flag子节点的声明，value的值只能是int类型。
+        -->
+        <attr name="param9">
+            <flag name = "param9_test0" value = "0" />
+            <flag name = "param9_test1" value = "1" />
+            <flag name = "param9_test2" value = "2" />
+            <flag name = "param9_test3" value = "3" />
+            <flag name = "param9_test4" value = "4" />
+        </attr>
+
+    </declare-styleable>
+</resources>

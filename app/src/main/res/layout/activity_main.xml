@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cdx="http://schemas.android.com/apk/res-auto">
+
+    <com.cdx.example.zidingyiview_getshuxing.view.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cdx:param1="param1_test0"
+        cdx:param2="abc"
+        cdx:param3="true"
+        cdx:param4="#ff00ff"
+        cdx:param5="140dp"
+        cdx:param6="1.0"
+        cdx:param7="7"
+        cdx:param8="200%"
+        cdx:param9="param9_test4|param9_test3"
+        />
+
+</RelativeLayout>
